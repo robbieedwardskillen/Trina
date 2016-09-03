@@ -13,7 +13,8 @@ $(function(){
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl ="../categories.json";
+var allCategoriesUrl =
+  "https://davids-restaurant.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl = //Try it without JSON ***
