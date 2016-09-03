@@ -13,11 +13,11 @@ $(function(){
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl =
-  "https://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl ="../categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
-var menuItemsUrl =
+var menuItemsUrl = //Try it without JSON ***
+
   "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
