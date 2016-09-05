@@ -36,16 +36,16 @@ function handleResponse(request,
   if ((request.readyState == 4) &&
      (request.status == 200)) {
 
-    if (isJsonResponse == undefined) {
-      isJsonResponse = true;
-    }
+      if (isJsonResponse == undefined) {
+        isJsonResponse = true;
+      }
 
-    if (isJsonResponse) {
-      responseHandler(JSON.parse(request.responseText));
-    }
-    else {
-      responseHandler(request.responseText);
-    }
+      if (isJsonResponse) {
+        responseHandler(JSON.parse(request.responseText));
+      }
+      else {
+        responseHandler(request.responseText);
+      }
   }
 }
 

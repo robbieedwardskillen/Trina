@@ -14,12 +14,11 @@ $(function(){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
-  "https://davids-restaurant.herokuapp.com/categories.json";
+  "test";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl = //Try it without JSON ***
-
-  "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
+  "menu-item-test";
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
@@ -55,8 +54,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	};
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
-		var randomValues = ["A", "B", "C", "CM", "CSR", "CU", "D", "DK", "DS", "F", "FR", "FY", "L",
-		"NF", "NL", "NS", "PF", "SO", "SP", "SR", "SS", "T", "V", "VG"];
+		var randomValues = ["A", "B", "C"];
 		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
 		$ajaxUtils.sendGetRequest(menuItemsUrl + randomValue, buildAndShowMenuItemsHTML);
 	}
