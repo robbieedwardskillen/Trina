@@ -14,14 +14,11 @@ $(function(){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl ="jsonInfo.json"
-  //"https://davids-restaurant.herokuapp.com/categories.json";
   "https://trinas-tax-info.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
-  //"https://davids-restaurant.herokuapp.com/menu_items.json?category=";
   "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
-  "jsonInfo.json"
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
@@ -120,19 +117,20 @@ var menuItemHtml = "snippets/menu-item.html";
 			var html = menuItemHtml;
 			html = insertProperty(html, "short_name", menuItems[i].short_name);
 			html = insertProperty(html, "catShortName", catShortName);
+			
 			html = insertItemPrice(html, "price small", menuItems[i].price_small);
 			html = insertItemPortionName(html, "small_portion_name", menuItems[i].small_portion_name);
 			html = insertItemPrice(html, "price_large", menuItems[i].price_large);
 			html = insertItemPortionName(html, "large_portion_name", menuItems[i].large_portion_name);
 			html = insertProperty(html, "name", menuItems[i].name);
 			html = insertProperty(html, "description", menuItems[i].description);
-	
+			if (i % 2 != 0){
+			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
 		finalHtml += html;
 		}
 		// var finalHtml;
 		// finalHtml += "<section class='row'>";
-			if (i % 2 != 0){
-			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			
 		}
 		finalHtml += "</section>";
 		return finalHtml;
