@@ -57,8 +57,8 @@ var menuItemHtml = "snippets/menu-item.html";
 	};
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
-		var randomValues = ["A", "B", "C"];
-		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
+		// var randomValues = ["A", "B", "C"];
+		// var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
 	}
 
