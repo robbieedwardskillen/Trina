@@ -13,12 +13,15 @@ $(function(){
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl =
-  "https://davids-restaurant.herokuapp.com/categories.json";
+var allCategoriesUrl ="jsonInfo.json"
+  //"https://davids-restaurant.herokuapp.com/categories.json";
+  "https://trinas-tax-info.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
-  "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
+  //"https://davids-restaurant.herokuapp.com/menu_items.json?category=";
+  "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
+  "jsonInfo.json"
 var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
@@ -56,15 +59,15 @@ var menuItemHtml = "snippets/menu-item.html";
 		showLoading("#main-content");
 		var randomValues = ["A", "B", "C"];
 		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
-		$ajaxUtils.sendGetRequest(menuItemsUrl + randomValue, buildAndShowMenuItemsHTML);
+		$ajaxUtils.sendGetRequest(menuItemsUrl, buildAndShowMenuItemsHTML);
 	}
 
 	document.addEventListener("DOMContentLoaded", function(event){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
-			homeHtml, function(responseText){
+			homeHtml, function(homeHtml){
 				document.querySelector("#main-content")
-				.innerHTML = responseText;
+				.innerHTML = homeHtml;
 			}, false);
 	});
 
@@ -123,21 +126,18 @@ var menuItemHtml = "snippets/menu-item.html";
 			html = insertItemPortionName(html, "large_portion_name", menuItems[i].large_portion_name);
 			html = insertProperty(html, "name", menuItems[i].name);
 			html = insertProperty(html, "description", menuItems[i].description);
+	
+		finalHtml += html;
+		}
+		// var finalHtml;
+		// finalHtml += "<section class='row'>";
 			if (i % 2 != 0){
 			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
-		}
-		finalHtml += html;
 		}
 		finalHtml += "</section>";
 		return finalHtml;
 	}
-	function insertRandomValue(){
-		var randomValues = ["A", "B", "C", "CM", "CSR", "CU", "D", "DK", "DS", "F", "FR", "FY", "L",
-		"NF", "NL", "NS", "PF", "SO", "SP", "SR", "SS", "T", "V", "VG"];
-		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
-		
-		return randomValue;
-	}
+
 	function insertItemPortionName(html,
                                portionPropName,
                                portionValue) {

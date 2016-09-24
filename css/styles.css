@@ -111,7 +111,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
   border: 2px solid #6E6568;
 }
 
-#menu-tile, #specials-tile, #map-tile{
+#faq-tile, #services-tile, #map-tile{
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -119,20 +119,20 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	border: 2px solid #6E6568;
 	overflow: hidden;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+#faq-tile:hover, #services-tile:hover, #map-tile:hover{
 	box-shadow: 0 1px 5px 1px #6E6568;
 }
-#menu-tile{
-	background: url('../images/menu-tile.jpg') no-repeat;
+#faq-tile{
+	background: url('../images/faq.jpg') no-repeat;
 	background-position: center;
 }
-#specials-tile{
-	background: url('../images/specials-tile.jpg') no-repeat;
+#services-tile{
+	background: url('../images/services.jpg') no-repeat;
 	background-position: center;
 }
 
 
-#menu-tile span, #specials-tile span, #map-tile span{
+#faq-tile span, #services-tile span, #map-tile span{
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -227,9 +227,12 @@ h3.menu-item-title{
 }
 #main-content{
 }
+.container .background_image{
+	margin-bottom: 15px;
+}
 @media (min-width: 1200px){
-.container .jumbotron{
-		background: url('../images/jumbotron_1200.jpg') no-repeat;
+.container .background_image{
+		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
 		box-shadow: 0 0 25px #6E6568;
 		border: 2px solid #000;
@@ -237,20 +240,20 @@ h3.menu-item-title{
 }
 @media(min-width: 992px) and (max-width: 1199px){
 
-	.container .jumbotron{
-		background: url('../images/jumbotron_992.jpg') no-repeat;
+	.container .background_image{
+		background: url('../images/background_image_992.jpg') no-repeat;
 		height: 558px;
 	}
 }
 @media(min-width: 768px) and (max-width: 991px){
 
-	.container .jumbotron{
-		background: url('../images/jumbotron_768.jpg') no-repeat;
+	.container .background_image{
+		background: url('../images/background_image_768.jpg') no-repeat;
 		height: 432px;
 	}
 }
 @media(max-width: 767px){
-	.container .jumbotron {
+	.container .background_image {
 	  	margin-top: 20px;
 	  	padding: 0;
 	}
@@ -294,7 +297,7 @@ h3.menu-item-title{
 	.menu-item-tile .menu-item-price{
 		text-align: center;
 	}
-	#menu-tile, #specials-tile {
+	#faq-tile, #services-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -304,7 +307,7 @@ h3.menu-item-title{
 		padding-top: 5px;
 		font-size: 6vw;
 	}
-	#menu-tile, #specials-tile{
+	#faq-tile, #services-tile{
 		width: 280px;
 		margin: 0 auto 15px;
 	}
