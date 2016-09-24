@@ -180,6 +180,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 .menu-item-price{
 	color: #000;
+	margin-top: 10px;
 }
 .menu-item-tile{
 	margin-bottom: 25px;
@@ -190,7 +191,6 @@ button.navbar-toggle, .navbar-header .icon-bar{
 .menu-item-tile .menu-item-price{
 	font-size: 1.1em;
 	text-align: left;
-	margin-top: -10px;
 }
 .menu-item-tile .menu-item-price span{
 	font-size: .6em;
