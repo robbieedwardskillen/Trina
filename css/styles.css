@@ -228,8 +228,9 @@ h3.menu-item-title{
 	font-size: .9em;
 	font-style: italic;
 }
-#main-content{
-	background-color: #f1c40f;
+#main-content{;
+	background:linear-gradient(to top, #f1c40f, #fff);
+	padding-top: 10px;
 }
 
 
