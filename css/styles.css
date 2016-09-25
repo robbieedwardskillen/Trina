@@ -140,7 +140,18 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	background: url('../images/services.jpg') no-repeat;
 	background-position: center;
 }
-
+.background_tile{
+	transition:background-position 2s;
+	background-position: center;
+}
+.background_tile:hover{
+	background-position: 0% 0px, top;
+}
+.container .background_image{
+	margin-bottom: 15px;
+	box-shadow: 0 0 5px #6E6568;
+	border: 2px solid #000;
+}
 
 #faq-tile span, #services-tile span, #map-tile span{
 	position: absolute;
@@ -224,19 +235,8 @@ h3.menu-item-title{
 }
 #main-content{
 }
-.container .background_image{
-	margin-bottom: 15px;
-	box-shadow: 5px 5px 5px #6E6568;
-	border: 2px solid #000;
-}
-.background_image{
-	position: relative;
-	transition:background-position 1s;
-	background-position: center;
-}
-.background_image:hover{
-	background-position: 0% 0px, top;
-}
+
+
 @media (min-width: 1200px){
 .container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
