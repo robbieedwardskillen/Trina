@@ -49,8 +49,9 @@ body {
 #nav-list{
 	margin-top: 10px;
 }
+
 #nav-list a {
-	color: #000;
+	color: #145A32;
 	text-align: center;
 }
 #nav-list a:hover{
