@@ -145,10 +145,15 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	margin-bottom: 15px;
 	box-shadow: 0 0 5px #6E6568;
 	border: 2px solid #000;
+	transition:background-position 2s;
+	background-position: center;
+}
+.container .background_image:hover{
+	box-shadow: 2px 2px 3px 3px #6E6568;
+	background-position: 50% 0px, top;
+	
 }
 
-.container .background_image:hover{
-	
 #faq-tile span, #services-tile span, #map-tile span{
 	position: absolute;
 	bottom: 0;
