@@ -227,13 +227,13 @@ h3.menu-item-title{
 .container .background_image{
 	margin-bottom: 15px;
 }
-.background_image{
+/*.background_image{
 	transition:background-position 1s;
 	background-position: center;
 }
 .background_image:hover{
 	background-position: 0% 0px, top;
-}
+}*/
 @media (min-width: 1200px){
 .container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
@@ -243,7 +243,7 @@ h3.menu-item-title{
 	}
 }
 .background_image{
-	transition:background-position 1s;
+	transition:background-position 2s;
 	background-position: center;
 }
 .background_image:hover{
