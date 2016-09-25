@@ -125,11 +125,10 @@ var menuItemHtml = "snippets/menu-item.html";
 			html = insertProperty(html, "description", menuItems[i].description);
 			if (i % 2 != 0){
 			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
-		finalHtml += html;
+		
 		}
-		// var finalHtml;
-		// finalHtml += "<section class='row'>";
-			
+
+			finalHtml += html;
 		}
 		finalHtml += "</section>";
 		return finalHtml;
