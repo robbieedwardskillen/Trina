@@ -102,7 +102,6 @@ var menuItemHtml = "snippets/menu-item.html";
 				
 
 				var menuItemsViewHtml = buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml, menuItemHtml);
-				console.log(menuItemsViewHtml);
 				insertHtml("#main-content", menuItemsViewHtml);
 			}, false);
 		}, false);
