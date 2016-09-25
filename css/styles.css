@@ -225,11 +225,13 @@ h3.menu-item-title{
 #main-content{
 }
 .container .background_image{
-	transition:background-position 1s;
 	margin-bottom: 15px;
+}
+.background_image{
+	transition:background-position 1s;
 	background-position: center;
 }
-.container .background_image:hover{
+.background_image:hover{
 	background-position: 0% 0px, top;
 }
 @media (min-width: 1200px){
