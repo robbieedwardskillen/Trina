@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-  background:linear-gradient(to top, #99ff33, #fff);
+  background:radial-gradient(#99ff33, #fff);
 }
 
 
