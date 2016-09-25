@@ -230,11 +230,12 @@ h3.menu-item-title{
 	border: 2px solid #000;
 }
 .background_image{
+	position: relative;
 	transition:background-position 1s;
 	background-position: center;
 }
 .background_image:hover{
-	background-position: 10% 10px, top;
+	background-position: 0% 0px, top;
 }
 @media (min-width: 1200px){
 .container .background_image{
