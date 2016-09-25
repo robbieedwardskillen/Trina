@@ -179,6 +179,9 @@ button.navbar-toggle, .navbar-header .icon-bar{
 #services-categories-title + div{
 	margin-bottom: 50px;
 }
+#menu-categories-title{
+	color:#000;
+}
 .menu-item-price{
 	color: #000;
 	margin-top: 10px;
