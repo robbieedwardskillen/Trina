@@ -120,14 +120,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #map-tile:hover{
-	box-shadow: 2px 2px 3px 3px #6E6568;
+	box-shadow: 2px 2px 3px 3px #145A32;
 }
-#faq-tile:hover{
-	box-shadow: 2px 2px 3px 3px #6E6568;
-	background-position: 50% 0px, top;
-}
-#services-tile:hover{
-	box-shadow: 2px 2px 3px 3px #6E6568;
+#faq-tile:hover, #services-tile:hover{
+	box-shadow: 2px 2px 3px 3px #145A32;
 	background-position: 50% 0px, top;
 }
 #faq-tile{
@@ -231,6 +227,7 @@ h3.menu-item-title{
 #main-content{;
 	background:linear-gradient(to bottom, #f1c40f, #fff);
 	padding-top: 10px;
+	box-shadow: 0 0 5px #145A32;
 }
 
 
