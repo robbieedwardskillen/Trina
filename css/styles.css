@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-	background:linear-gradient(to bottom, #99ff33 , #fff);
+	background:linear-gradient(to bottom, #145A32 , #fff);
 }
 
 #header-nav{
@@ -229,7 +229,7 @@ h3.menu-item-title{
 	font-style: italic;
 }
 #main-content{;
-	background:linear-gradient(to top, #f1c40f, #fff);
+	background:linear-gradient(to bottom, #f1c40f, #fff);
 	padding-top: 10px;
 }
 
