@@ -57,7 +57,6 @@ var menuItemHtml = "snippets/menu-item.html";
 		var randomValues = ["A", "B", "C"];
 		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
 		$ajaxUtils.sendGetRequest(menuItemsUrl + randomValue, buildAndShowMenuItemsHTML);
-		console.log(menuItemsUrl + randomValue);
 	}
 
 	document.addEventListener("DOMContentLoaded", function(event){
@@ -103,6 +102,7 @@ var menuItemHtml = "snippets/menu-item.html";
 				
 
 				var menuItemsViewHtml = buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml, menuItemHtml);
+				console.log(menuItemsViewHtml);
 				insertHtml("#main-content", menuItemsViewHtml);
 			}, false);
 		}, false);
@@ -118,7 +118,6 @@ var menuItemHtml = "snippets/menu-item.html";
 			var html = menuItemHtml;
 			html = insertProperty(html, "short_name", menuItems[i].short_name);
 			html = insertProperty(html, "catShortName", catShortName);
-			
 			html = insertItemPrice(html, "price small", menuItems[i].price_small);
 			html = insertItemPortionName(html, "small_portion_name", menuItems[i].small_portion_name);
 			html = insertItemPrice(html, "price_large", menuItems[i].price_large);
