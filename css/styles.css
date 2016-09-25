@@ -121,19 +121,23 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #faq-tile:hover, #services-tile:hover, #map-tile:hover{
-	box-shadow: 0 1px 5px 1px #6E6568;
+	box-shadow: 0 0 15px #6E6568;
 }
 #faq-tile{
 	background: url('../images/faq.jpg') no-repeat;
-	box-shadow: 0 0 25px #6E6568;
+	box-shadow: 0 0 5px #6E6568;
 	border: 2px solid #000;
 	background-position: center;
 }
 #services-tile{
 	background: url('../images/services.jpg') no-repeat;
-	box-shadow: 0 0 25px #6E6568;
+	box-shadow: 0 0 5px #6E6568;
 	border: 2px solid #000;
 	background-position: center;
+}
+#map-tile{
+	box-shadow: 0 0 5px #6E6568;
+	border: 2px solid #000;
 }
 
 
@@ -170,7 +174,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	opacity: .8;
 }
 .category-tile:hover{
-	box-shadow: 0 5px 5px 5px #6E6568;
+	box-shadow: 0 1px 5px 1px #6E6568;
 }
 #service-categories-info{
 	color: #000;
