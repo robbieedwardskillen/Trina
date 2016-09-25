@@ -231,6 +231,7 @@ h3.menu-item-title{
 }
 .container .background_image{
 	margin-bottom: 15px;
+	margin-top: 15px;
 }
 @media (min-width: 1200px){
 .container .background_image{
