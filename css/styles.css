@@ -226,29 +226,22 @@ h3.menu-item-title{
 }
 .container .background_image{
 	margin-bottom: 15px;
+	box-shadow: 5px 5px 5px #6E6568;
+	border: 2px solid #000;
 }
-/*.background_image{
+.background_image{
 	transition:background-position 1s;
 	background-position: center;
 }
 .background_image:hover{
-	background-position: 0% 0px, top;
-}*/
+	background-position: 10% 10px, top;
+}
 @media (min-width: 1200px){
 .container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
-		box-shadow: 0 0 25px #6E6568;
-		border: 2px solid #000;
 	}
-	.background_image{
-		transition:background-position 2s;
-		background-position: center;
-	}
-	.background_image:hover{
-		background-position: 0% 0px, top;
-		box-shadow: 5px 5px 5px #6E6568;
-	}
+
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
