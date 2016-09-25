@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-  background:linear-gradient(to bottom, #99ff33, #fff);
+  background:linear-gradient(to top, #99ff33, #fff);
 }
 
 
@@ -125,10 +125,14 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 #faq-tile{
 	background: url('../images/faq.jpg') no-repeat;
+	box-shadow: 0 0 25px #6E6568;
+	border: 2px solid #000;
 	background-position: center;
 }
 #services-tile{
 	background: url('../images/services.jpg') no-repeat;
+	box-shadow: 0 0 25px #6E6568;
+	border: 2px solid #000;
 	background-position: center;
 }
 
