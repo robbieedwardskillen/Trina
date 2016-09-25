@@ -242,6 +242,14 @@ h3.menu-item-title{
 		border: 2px solid #000;
 	}
 }
+.background_image{
+	transition:background-position 1s;
+	background-position: center;
+}
+.background_image:hover{
+	background-position: 0% 0px, top;
+	box-shadow: 5px 5px 5px #6E6568;
+}
 @media(min-width: 992px) and (max-width: 1199px){
 
 	.container .background_image{
