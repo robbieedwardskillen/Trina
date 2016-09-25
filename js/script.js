@@ -13,7 +13,7 @@ $(function(){
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl ="jsonInfo.json"
+var allCategoriesUrl =
   "https://trinas-tax-info.herokuapp.com/categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
