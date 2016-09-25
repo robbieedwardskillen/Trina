@@ -2,7 +2,8 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-  background:radial-gradient(#99ff33, #fff);
+  background:url('home-snippet.html') no-repeat center 70px, url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/space.jpg') no-repeat bottom center;
+
 }
 
 
@@ -186,7 +187,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	font-size: 4em;
 }
 .menu-item-price{
-	color: #000;
+	color: #fff;
 	margin-top: 10px;
 }
 .menu-item-tile{
@@ -198,6 +199,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 .menu-item-tile .menu-item-price{
 	font-size: 1.1em;
 	text-align: left;
+	color: #fff;
 }
 .menu-item-tile .menu-item-price span{
 	font-size: .6em;
@@ -222,13 +224,15 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 .menu-item-description{
 	padding-right: 30px;
-	color: #000;
+	color: #fff;
 }
 h3.menu-item-title{
+	color: #fff;
 	margin: 0 0 10px;
 	font-size: 2em;
 }
 .menu-item-details{
+	color: #fff;
 	font-size: .9em;
 	font-style: italic;
 }
