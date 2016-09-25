@@ -13,7 +13,7 @@ body {
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0px;
-	box-shadow: 2px 2px 3px 3px #f1c40f;
+	box-shadow: 2px 2px 3px 3px #145A32;
 }
 .navbar-brand{
 	padding-top: 35px;
@@ -120,10 +120,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #map-tile:hover{
-	box-shadow: 0 0 3px #f1c40f;
+	box-shadow: 0 0 3px #145A32;
 }
 #faq-tile:hover, #services-tile:hover{
-	box-shadow: 0 0 3px #f1c40f;
+	box-shadow: 0 0 3px #145A32;
 	background-position: 50% 0px, top;
 }
 #faq-tile{
