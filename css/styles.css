@@ -2,9 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-  background:url('../images/background_background_image.jpg') no-repeat bottom center;
-  background: width 200% height 100%;
-  transition:background-position 1s;
+
 }
 body:hover{
 	background-position: 35% 20px, top right;
@@ -123,9 +121,16 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	border: 2px solid #6E6568;
 	overflow: hidden;
 }
-#faq-tile:hover, #services-tile:hover, #map-tile:hover{
+#map-tile:hover{
+	box-shadow: 2px 2px 3px 3px #6E6568;
+}
+#faq-tile:hover{
 	box-shadow: 2px 2px 3px 3px #6E6568;
 	background-position: 50% 0px, top;
+}
+#services-tile:hover{
+	box-shadow: 2px 2px 3px 3px #6E6568;
+	background-position: 0% 0px, bottom;
 }
 #faq-tile{
 	 transition:background-position 1s;
@@ -244,9 +249,12 @@ h3.menu-item-title{
 #main-content{
 }
 .container .background_image{
+	transition:background-position 1s;
 	margin-bottom: 15px;
 }
-
+.background_image:hover{
+	background-position: 0% 0px, top;
+}
 @media (min-width: 1200px){
 .container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
