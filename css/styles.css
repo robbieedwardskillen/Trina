@@ -120,10 +120,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #map-tile:hover{
-	box-shadow: 2px 2px 3px 3px #145A32;
+	box-shadow: 2px 2px 3px 3px #f1c40f;
 }
 #faq-tile:hover, #services-tile:hover{
-	box-shadow: 2px 2px 3px 3px #145A32;
+	box-shadow: 2px 2px 3px 3px #f1c40f;
 	background-position: 50% 0px, top;
 }
 #faq-tile{
