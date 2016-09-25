@@ -121,7 +121,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #faq-tile:hover, #services-tile:hover, #map-tile:hover{
-	box-shadow: 15px 15px 15px #6E6568;
+	box-shadow: 5px 5px 5px #6E6568;
 }
 #faq-tile{
 	background: url('../images/faq.jpg') no-repeat;
