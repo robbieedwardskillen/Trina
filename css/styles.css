@@ -170,7 +170,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	opacity: .8;
 }
 .category-tile:hover{
-	box-shadow: 0 1px 5px 1px #6E6568;
+	box-shadow: 0 5px 5px 5px #6E6568;
 }
 #service-categories-info{
 	color: #000;
