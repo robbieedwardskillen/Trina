@@ -142,7 +142,6 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 .background_tile{
 	transition:background-position 2s;
-	background: url('../images/backround_image_1200') no-repeat;
 	background-position: center;
 }
 .background_tile:hover{
