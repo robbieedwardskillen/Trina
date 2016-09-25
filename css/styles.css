@@ -229,10 +229,7 @@ h3.menu-item-title{
 	font-style: italic;
 }
 #main-content{
-	background: url('../images/background_image_1200.jpg') no-repeat;
-	width: 200%;
-	height: 200%;
-
+	background-color: #000;
 }
 
 
