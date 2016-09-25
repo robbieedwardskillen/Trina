@@ -140,14 +140,13 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	background: url('../images/services.jpg') no-repeat;
 	background-position: center;
 }
-#background_tile{
+.background_tile{
 	transition:background-position 2s;
 	background: url('../images/backround_image_1200') no-repeat;
 	background-position: center;
 }
-#background_tile:hover{
+.background_tile:hover{
 	box-shadow: 2px 2px 3px 3px #6E6568;
-
 	background-position: 50% 0px, top;
 }
 .container .background_image{
