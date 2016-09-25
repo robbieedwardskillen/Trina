@@ -128,7 +128,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 #services-tile:hover{
 	box-shadow: 2px 2px 3px 3px #6E6568;
-	background-position: 50% 0px, bottom;
+	background-position: 50% 0px, top;
 }
 #faq-tile{
 	 transition:background-position 1s;
