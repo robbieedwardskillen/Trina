@@ -6,10 +6,7 @@ body {
 .linear-gradient{
 	background: linear-gradient(to bottom, #99ff33, #fff);
 }
-.linear-gradient{
-	width: 100px;
-	height: 100px;
-}
+
 #header-nav{
 	border-radius: 0;
 }
