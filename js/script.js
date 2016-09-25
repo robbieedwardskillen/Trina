@@ -124,13 +124,13 @@ var menuItemHtml = "snippets/menu-item.html";
 			html = insertItemPortionName(html, "large_portion_name", menuItems[i].large_portion_name);
 			html = insertProperty(html, "name", menuItems[i].name);
 			html = insertProperty(html, "description", menuItems[i].description);
-			if (i % 2 != 0){
-			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
+			
 		finalHtml += html;
 		}
 		// var finalHtml;
 		// finalHtml += "<section class='row'>";
-			
+			if (i % 2 != 0){
+			html += "<div class='clearfix visible-lg-block visible-md-block'></div>";
 		}
 		finalHtml += "</section>";
 		return finalHtml;
