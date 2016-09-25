@@ -228,7 +228,9 @@ h3.menu-item-title{
 	font-size: .9em;
 	font-style: italic;
 }
-
+#main-content{
+	background-color: gold;
+}
 
 
 @media (min-width: 1200px){
