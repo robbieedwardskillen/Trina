@@ -125,19 +125,11 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 #faq-tile{
 	background: url('../images/faq.jpg') no-repeat;
-	box-shadow: 0 0 5px #6E6568;
-	border: 2px solid #000;
 	background-position: center;
 }
 #services-tile{
 	background: url('../images/services.jpg') no-repeat;
-	box-shadow: 0 0 5px #6E6568;
-	border: 2px solid #000;
 	background-position: center;
-}
-#map-tile{
-	box-shadow: 0 0 5px #6E6568;
-	border: 2px solid #000;
 }
 
 
