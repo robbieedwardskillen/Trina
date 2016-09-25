@@ -146,6 +146,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	box-shadow: 0 0 5px #6E6568;
 	border: 2px solid #000;
 }
+.container .background_image:hover{
+	box-shadow: 10px 10px 10px;
+	border: 15px solid #fff;
+}
 
 #faq-tile span, #services-tile span, #map-tile span{
 	position: absolute;
