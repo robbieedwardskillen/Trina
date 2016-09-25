@@ -4,7 +4,7 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 .linear-gradient{
-	background: linear-gradient(to bottom, #99ff33, #fff);
+	background: linear-gradient(to top, #99ff33, #fff);
 }
 
 #header-nav{
