@@ -180,7 +180,9 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	margin-bottom: 50px;
 }
 #menu-categories-title{
+	text-shadow: 1px 1px 1px #6E6568;
 	color:#000;
+	font-size: 4em;
 }
 .menu-item-price{
 	color: #000;
