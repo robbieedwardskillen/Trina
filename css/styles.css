@@ -35,13 +35,13 @@ body {
 	text-decoration: none;
 }
 
-.navbar-brand p{ /*certified*/
+.navbar-brand p{ 
 	color: #145A32;
 	text-transform: uppercase;
 	font-size: .6em;
 	margin-top: 10px;
 }
-.navbar-brand p span{ /* middle of star */
+.navbar-brand p span{
 	vertical-align: middle;
 	font-size:20px;
 	margin-bottom: 5px;
@@ -54,8 +54,8 @@ body {
 	text-align: center;
 }
 #nav-list a:hover{
-	color: #fff;
-	background: #000;
+	color: #f1c40f;
+	background: #145A32;
 }
 #nav-list a span{
 	font-size: 1.8em;
@@ -215,7 +215,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	color: #fff;
 }
 h3.menu-item-title{
-	color: #fff;
+	color: #145A32;
 	margin: 0 0 10px;
 	font-size: 2em;
 }
