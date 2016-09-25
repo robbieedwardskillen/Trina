@@ -57,6 +57,7 @@ var menuItemHtml = "snippets/menu-item.html";
 		var randomValues = ["A", "B", "C"];
 		var randomValue = randomValues[Math.floor(Math.random() * randomValues.length)];
 		$ajaxUtils.sendGetRequest(menuItemsUrl + "C", buildAndShowMenuItemsHTML);
+		console.log(menuItemsUrl + "C");
 	}
 
 	document.addEventListener("DOMContentLoaded", function(event){
