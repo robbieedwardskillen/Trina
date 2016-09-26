@@ -232,8 +232,8 @@ h3.menu-item-title{
 }
 #menu-categories-description{
 		color: #000;
-		margin: auto;
-		font-weight: bold;
+		margin-bottom: 10px;
+		font-style: italic;
 	}
 
 @media (min-width: 1200px){
