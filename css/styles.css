@@ -230,7 +230,10 @@ h3.menu-item-title{
 	padding-top: 10px;
 	box-shadow: 0 0 10px #145A32;
 }
-
+#menu-categories-description{
+		color: #000;
+		margin-bottom: 10px;
+	}
 
 @media (min-width: 1200px){
 .container .background_image{
@@ -294,10 +297,7 @@ h3.menu-item-title{
 	.menu-item-description{
 		text-align: center;
 	}
-	#menu-categories-description{
-		color: #000;
-		margin-bottom: 10px;
-	}
+	
 	.menu-item-tile .menu-item-price{
 		text-align: center;
 	}
