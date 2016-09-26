@@ -233,6 +233,7 @@ h3.menu-item-title{
 #menu-categories-description{
 		color: #000;
 		margin-bottom: 15px;
+		margin-top: 15px;
 	}
 
 @media (min-width: 1200px){
