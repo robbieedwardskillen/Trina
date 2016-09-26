@@ -296,6 +296,9 @@ h3.menu-item-title{
 	.menu-item-description{
 		text-align: center;
 	}
+	.menu-categories-description{
+		color: #000;
+	}
 	.menu-item-tile .menu-item-price{
 		text-align: center;
 	}
