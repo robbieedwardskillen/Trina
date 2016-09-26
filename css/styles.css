@@ -237,7 +237,6 @@ h3.menu-item-title{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
 	}
-
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
@@ -289,15 +288,14 @@ h3.menu-item-title{
 		font-size: 1em;
 		margin-right: 5px;
 	}
-	
 	.menu-item-photo{
 		margin: auto;
 	}
 	.menu-item-description{
 		text-align: center;
 	}
-	.menu-categories-description{
-		color: #fff;
+	#menu-categories-description{
+		color: #000;
 		margin-bottom: 10px;
 	}
 	.menu-item-tile .menu-item-price{
