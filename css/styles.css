@@ -269,7 +269,7 @@ h3.menu-item-title{
 	    padding: 8px;
 	    border: 5px solid #000;
 	    color: #fff;
-	    box-shadow: 0 0 5px;
+	    box-shadow: 0 0 5px #000;
 	    background:linear-gradient(to bottom, #145A32 , #000);
 	}
 
