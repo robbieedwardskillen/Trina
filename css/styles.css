@@ -133,7 +133,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	background-position: center;
 }
 #services-tile{
-	transition:background-position 1s;
+	transition:background-position 3s;
 	background: url('../images/services.jpg') no-repeat;
 	background-position: center;
 }
