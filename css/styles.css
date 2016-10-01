@@ -112,7 +112,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
   border: 2px solid #6E6568;
 }
 
-#faq-tile, #services-tile, #map-tile{
+#about-tile, #services-tile, #map-tile{
 	height: 250px;
 	width: 100%;
 	margin-bottom: 15px;
@@ -123,13 +123,13 @@ button.navbar-toggle, .navbar-header .icon-bar{
 #map-tile:hover{
 	box-shadow: 0 0 5px #145A32;
 }
-#faq-tile:hover, #services-tile:hover{
+#about-tile:hover, #services-tile:hover{
 	box-shadow: 0 0 5px #145A32;
 	background-position: 50% 0px, top;
 }
-#faq-tile{
+#about-tile{
 	 transition:background-position 2s;
-	background: url('../images/faq.jpg') no-repeat;
+	background: url('../images/about.jpg') no-repeat;
 	background-position: center;
 }
 #services-tile{
@@ -145,7 +145,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 
 
-#faq-tile span, #services-tile span, #map-tile span{
+#about-tile span, #services-tile span, #map-tile span{
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -304,7 +304,7 @@ h3.menu-item-title{
 	.menu-item-tile .menu-item-price{
 		text-align: center;
 	}
-	#faq-tile, #services-tile {
+	#about-tile, #services-tile {
     width: 360px;
     margin: 0 auto 15px;
   }
@@ -314,7 +314,7 @@ h3.menu-item-title{
 		padding-top: 5px;
 		font-size: 6vw;
 	}
-	#faq-tile, #services-tile{
+	#about-tile, #services-tile{
 		width: 280px;
 		margin: 0 auto 15px;
 	}
