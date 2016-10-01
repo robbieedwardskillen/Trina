@@ -241,12 +241,20 @@ h3.menu-item-title{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
 	}
+.container .background_image_office{
+		background: url('../images/office_1200.jpg') no-repeat;
+		height: 675px;
+	}
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
 
 	.container .background_image{
 		background: url('../images/background_image_992.jpg') no-repeat;
+		height: 558px;
+	}
+	.container .background_image_office{
+		background: url('../images/office_992.jpg') no-repeat;
 		height: 558px;
 	}
 }
@@ -256,10 +264,18 @@ h3.menu-item-title{
 		background: url('../images/background_image_768.jpg') no-repeat;
 		height: 432px;
 	}
+	.container .background_image_office{
+		background: url('../images/office_768.jpg') no-repeat;
+		height: 432px;
+	}
 }
 @media(max-width: 767px){
 	.container .background_image {
 	  	margin-top: 20px;
+	  	padding: 0;
+	}
+	.container .background_image_office{
+		margin-top: 20px;
 	  	padding: 0;
 	}
 	#call-btn > a{
