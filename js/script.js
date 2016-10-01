@@ -51,7 +51,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	dc.loadMenuCategories = function(){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
-			allCategoriesUrl, buildAndShowCategoriesHTML);
+			allCategoriesUrl, buildAndShowCategoriesHTML, false);
 	};
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
