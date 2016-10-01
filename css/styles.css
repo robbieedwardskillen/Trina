@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-	background:linear-gradient(to bottom, #009900 , #fff);
+	background:linear-gradient(to bottom, #008000 , #fff);
 }
 
 #header-nav{
@@ -13,7 +13,7 @@ body {
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0px;
-	box-shadow: 2px 2px 3px 3px #009900;
+	box-shadow: 2px 2px 3px 3px #008000;
 }
 .navbar-brand{
 	padding-top: 35px;
@@ -21,11 +21,11 @@ body {
 }
 .navbar-brand h1{ 
 	font-family: 'Lora', serif;
-	color: #009900;
+	color: #008000;
 	font-size: 1.5em;
 	text-transform: uppercase;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #009900;
+	text-shadow: 1px 1px 1px #008000;
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
@@ -36,7 +36,7 @@ body {
 }
 
 .navbar-brand p{ 
-	color: #009900;
+	color: #008000;
 	text-transform: uppercase;
 	font-size: .6em;
 	margin-top: 10px;
@@ -51,12 +51,12 @@ body {
 }
 
 #nav-list a {
-	color: #009900;
+	color: #008000;
 	text-align: center;
 }
 #nav-list a:hover{
 	color: #f1c40f;
-	background: #009900;
+	background: #008000;
 }
 #nav-list a span{
 	font-size: 1.8em;
@@ -121,10 +121,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #map-tile:hover{
-	box-shadow: 0 0 5px #009900;
+	box-shadow: 0 0 5px #008000;
 }
 #about-tile:hover, #services-tile:hover{
-	box-shadow: 0 0 5px #009900;
+	box-shadow: 0 0 5px #008000;
 	background-position: 50% 0px, top;
 }
 #about-tile{
@@ -228,7 +228,7 @@ h3.menu-item-title{
 #main-content{
 	background:linear-gradient(to bottom, #f1c40f, #fff);
 	padding-top: 10px;
-	box-shadow: 0 0 10px #009900;
+	box-shadow: 0 0 10px #008000;
 }
 #menu-categories-description{
 		color: #000;
@@ -270,7 +270,7 @@ h3.menu-item-title{
 	    border: 5px solid #000;
 	    color: #fff;
 	    box-shadow: 0 0 5px #000;
-	    background:linear-gradient(to bottom, #009900 , #000);
+	    background:linear-gradient(to bottom, #008000 , #000);
 	}
 
 	.navbar-brand{
