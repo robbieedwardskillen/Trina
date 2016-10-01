@@ -50,7 +50,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	dc.loadMenuCategories = function(){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
-			allCategoriesUrl, buildAndShowCategoriesHTML, false);
+			allCategoriesUrl, buildAndShowCategoriesHTML);
 	};
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
