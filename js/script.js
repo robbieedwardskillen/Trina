@@ -84,7 +84,7 @@ var menuItemHtml = "snippets/menu-item.html";
 		$ajaxUtils.sendGetRequest(informationTitleHtml, function(informationTitleHtml){
 
 				switchMenuToActive();
-				var categoriesViewHtml = buildinformationViewHtml(informationTitleHtml);
+				var categoriesViewHtml = buildInformationViewHtml(informationTitleHtml);
 				insertHtml("#main-content", categoriesViewHtml);
 		}, false)
 	}
