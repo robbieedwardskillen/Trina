@@ -47,11 +47,15 @@ var menuItemHtml = "snippets/menu-item.html";
 			document.querySelector("#navMenuButton").className = classes;
 		}
 	};
-	dc.loadMenuCategories = function(){
+	dc.loadAboutPage = function(){
+		showLoading("#main-content");
+		buildAboutPage();
+	}
+	dc.loadInformationPage = function(){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
 			allCategoriesUrl, buildAboutPage);
-	};
+	}
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
@@ -68,7 +72,7 @@ var menuItemHtml = "snippets/menu-item.html";
 
 
 	
-	function buildAboutPage(categories){
+	function buildAboutPage(){
 		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
 
 				switchMenuToActive();
