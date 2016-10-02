@@ -16,7 +16,7 @@ var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://trinas-tax-info.herokuapp.com/categories.json";
 var aboutTitleHtml = "snippets/about-snippet.html";
-var informationTitleHtml = "/snippets/information-snippet.html";
+var informationTitleHtml = "snippets/information-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
   "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
