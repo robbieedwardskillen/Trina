@@ -160,7 +160,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 
 #service-categories-info{
 	color: #000;
-	text-shadow: 1px 1px 1px #000;
+	font-size: 2em;
 }
 #services-categories-title{
 	color: #000;
