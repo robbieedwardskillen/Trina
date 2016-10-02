@@ -81,14 +81,14 @@ var menuItemHtml = "snippets/menu-item.html";
 		}, false)
 	}
 	function buildInformationPage(){
-		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
+		$ajaxUtils.sendGetRequest(informationTitleHtml, function(informationTitleHtml){
 
 				switchMenuToActive();
-				var categoriesViewHtml = buildAboutViewHtml(aboutTitleHtml);
+				var categoriesViewHtml = buildinformationViewHtml(informationTitleHtml);
 				insertHtml("#main-content", categoriesViewHtml);
 		}, false)
 	}
-	function buildInformationViewHtml(aboutTitleHtml){
+	function buildInformationViewHtml(informationTitleHtml){
 		var finalHtml = informationTitleHtml;
 
 		return finalHtml;
