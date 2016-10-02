@@ -16,6 +16,7 @@ var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://trinas-tax-info.herokuapp.com/categories.json";
 var aboutTitleHtml = "snippets/about-snippet.html";
+var informationTitleHtml = "/snippets/information-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
   "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
@@ -53,8 +54,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	}
 	dc.loadInformationPage = function(){
 		showLoading("#main-content");
-		$ajaxUtils.sendGetRequest(
-			allCategoriesUrl, buildAboutPage);
+		buildInformationPage();
 	}
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
@@ -80,7 +80,19 @@ var menuItemHtml = "snippets/menu-item.html";
 				insertHtml("#main-content", categoriesViewHtml);
 		}, false)
 	}
+	function buildInformationPage(){
+		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
 
+				switchMenuToActive();
+				var categoriesViewHtml = buildAboutViewHtml(aboutTitleHtml);
+				insertHtml("#main-content", categoriesViewHtml);
+		}, false)
+	}
+	function buildInformationViewHtml(aboutTitleHtml){
+		var finalHtml = informationTitleHtml;
+
+		return finalHtml;
+	}
 	
 
 	function buildAboutViewHtml(aboutTitleHtml){
