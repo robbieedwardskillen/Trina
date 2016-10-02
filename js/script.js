@@ -15,7 +15,7 @@ var dc = {};
 var homeHtml = "snippets/home-snippet.html";
 var allCategoriesUrl =
   "https://trinas-tax-info.herokuapp.com/categories.json";
-var categoriesTitleHtml = "snippets/categories-title-snippet.html";
+var aboutTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var menuItemsUrl =
   "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
@@ -50,7 +50,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	dc.loadMenuCategories = function(){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
-			allCategoriesUrl, buildAndShowCategoriesHTML);
+			allCategoriesUrl, buildAboutPage);
 	};
 	dc.loadMenuItems = function(categoryShort){
 		showLoading("#main-content");
@@ -68,30 +68,20 @@ var menuItemHtml = "snippets/menu-item.html";
 
 
 	
-	function buildAndShowCategoriesHTML(categories){
-		$ajaxUtils.sendGetRequest(categoriesTitleHtml, function(categoriesTitleHtml){
-			$ajaxUtils.sendGetRequest(categoryHtml, function(categoryHtml){
+	function buildAboutPage(categories){
+		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
+
 				switchMenuToActive();
-				var categoriesViewHtml = buildCategoriesViewHtml(categories, categoriesTitleHtml, categoryHtml);
+				var categoriesViewHtml = buildAboutViewHtml(aboutTitleHtml);
 				insertHtml("#main-content", categoriesViewHtml);
-			}, false)
 		}, false)
 	}
 
 	
 
-	function buildCategoriesViewHtml(categories, categoriesTitleHtml, categoryHtml){
-		var finalHtml = categoriesTitleHtml;
-		finalHtml += "<section class='row'>";
-		for (var i = 0; i < categories.length; i++){
-			var html = categoryHtml;
-			var name = "" + categories[i].name;
-			var short_name = categories[i].short_name;
-			html = insertProperty(html, "name", name);
-			html = insertProperty(html,"short_name",short_name);
-			finalHtml += html;
-		}
-		finalHtml += "</section>";
+	function buildAboutViewHtml(aboutTitleHtml){
+		var finalHtml = aboutTitleHtml;
+
 		return finalHtml;
 	}
 	function buildAndShowMenuItemsHTML(categoryMenuItems){
