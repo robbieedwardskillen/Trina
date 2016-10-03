@@ -128,12 +128,12 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	background-position: 50% 0px, top;
 }
 #about-tile{
-	 transition:background-position 1s;
+	transition:background-position 1.5s;
 	background: url('../images/about.jpg') no-repeat;
 	background-position: center;
 }
 #services-tile{
-	transition:background-position 1s;
+	transition:background-position 1.5s;
 	background: url('../images/services.jpg') no-repeat;
 	background-position: center;
 }
