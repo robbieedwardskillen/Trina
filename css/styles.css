@@ -4,7 +4,13 @@ body {
   font-family: 'Oxygen', sans-serif;
 	background:linear-gradient(to bottom, #008000 , #fff);
 }
-
+hr{
+	border: 0;
+	clear: both;
+	display: block;
+	width: 96%;
+	height: 1px;
+}
 #header-nav{
 	border-radius: 0;
 }
