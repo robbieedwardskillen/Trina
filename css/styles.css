@@ -58,13 +58,13 @@ hr{
 }
 
 #nav-list a {
-	color: #008000;
+	color: #000;
 	text-align: center;
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 #nav-list a:hover{
 	color: #fff;
-	background:linear-gradient(to top, #f1c40f, #fff);
+	background-color: #f1c40f;
 	box-shadow: 0 0 2px #000;
 
 }
