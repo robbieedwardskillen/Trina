@@ -12,9 +12,7 @@ hr{
 	height: 1px;
 	background-color:#000;
 }
-.dropdown-backdrop{
-	position: fixed;
-}
+
 #header-nav{
 	border-radius: 0;
 }
