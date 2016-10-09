@@ -134,17 +134,12 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 #about-tile:hover, #services-tile:hover{
 	box-shadow: 0 0 5px #008000;
-	background-position: 50% 0px, top;
 }
 #about-tile{
-	transition:background-position 1.5s;
 	background: url('../images/about.jpg') no-repeat;
-	background-position: center;
 }
 #services-tile{
-	transition:background-position 1.5s;
 	background: url('../images/services.jpg') no-repeat;
-	background-position: center;
 }
 
 .container .background_image{
