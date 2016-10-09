@@ -9,6 +9,9 @@ $(function(){
     	$(event.target).focus();
   	});
 });
+$(document.ready(function(){
+	$(".dropdown-toggle").dropdown();
+});
 
 (function(global){
 var dc = {};
