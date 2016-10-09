@@ -5,7 +5,7 @@ body {
 	background:linear-gradient(to bottom, #008000 , #fff);
 }
 .navbar{
-	min-height: 150px;
+	min-height: 250px;
 }
 .dropdown-backdrop {
   position: fixed;
