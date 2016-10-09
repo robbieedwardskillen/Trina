@@ -275,6 +275,9 @@ h3.menu-item-title{
 	}
 }
 @media(max-width: 767px){
+	#collapsable-nav{
+		position:static;
+	}
 	.container .background_image {
 	  	margin-top: 20px;
 	  	padding: 0;

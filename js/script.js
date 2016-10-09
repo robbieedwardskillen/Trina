@@ -8,7 +8,7 @@ $(function(){
 	$("#navbarToggle").click(function (event) {
     	$(event.target).focus();
   	});
-  	$(".dropdown-toggle").dropdown();
+  	
 });
 
 (function(global){
