@@ -4,6 +4,9 @@ body {
   font-family: 'Oxygen', sans-serif;
 	background:linear-gradient(to bottom, #008000 , #fff);
 }
+.navbar{
+	min-height: 50px;
+}
 .dropdown-backdrop {
   position: fixed;
   left: 0;
