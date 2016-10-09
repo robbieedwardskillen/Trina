@@ -12,6 +12,9 @@ hr{
 	height: 1px;
 	background-color:#000;
 }
+.dropdown-backdrop{
+	position: static;
+}
 #header-nav{
 	border-radius: 0;
 }
