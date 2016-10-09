@@ -12,6 +12,9 @@ body {
   top: 0;
   z-index: 990;
 }
+.navbar ul.nav li a {
+    z-index: 1000;
+}
 hr{
 	border: 0;
 	clear: both;
