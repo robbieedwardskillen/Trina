@@ -6,7 +6,9 @@ body {
 }
 
 #scrolling-image-1{
+	position: fixed;
 	background: url('../images/Logo.jpg') no-repeat;
+
 }
 .navbar{
 	min-height: 140px;
