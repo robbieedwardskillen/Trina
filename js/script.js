@@ -10,13 +10,7 @@ $(function(){
   	});
   	
 });
-$("#services-tile").interactive_bg({
-	strength: 25, 
-	scale: 1.05,
-	animationSpeed: "100ms",
-	contain: true,
-	wrapContant: false
-});
+
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";
