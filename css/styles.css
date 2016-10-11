@@ -12,13 +12,13 @@ body {
 	background-color: #000;
 	
 	background-image: url(images/Logo.jpg);
-	background-position: -120% 70px;
+	background-position: -120% 0px;
 	background-repeat: no-repeat;
 	animation: animate-background linear 5s infinite;
 }
 @keyframes animate-background{
-	from{ background-position: 120% 70px; }
-	to{ background-position: -20% 70px; }
+	from{ background-position: 120% 0px; }
+	to{ background-position: -20% 200px; }
 }
 .navbar{
 	min-height: 140px;
