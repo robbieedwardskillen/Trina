@@ -2,7 +2,7 @@ body {
   font-size: 16px;
   color: #fff;
   font-family: 'Oxygen', sans-serif;
-  background:linear-gradient(to bottom, #008040 , #fff);
+  background:linear-gradient(to bottom, #006633 , #fff);
 }
 .navbar{
 	min-height: 140px;
@@ -42,7 +42,7 @@ hr{
 	width: 150px;
 	height: 150px;
 	margin: 10px 15px 10px 0px;
-	box-shadow: 2px 2px 3px 3px #008040;
+	box-shadow: 2px 2px 3px 3px #006633;
 }
 .navbar-brand{
 	padding-top: 35px;
@@ -50,10 +50,10 @@ hr{
 }
 .navbar-brand h1{ 
 	font-family: 'Lora', serif;
-	color: #008040;
+	color: #006633;
 	font-size: 1.5em;
 	font-weight: bold;
-	text-shadow: 1px 1px 1px #008040;
+	text-shadow: 1px 1px 1px #006633;
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
@@ -64,7 +64,7 @@ hr{
 }
 
 .navbar-brand p{ 
-	color: #008040;
+	color: #006633;
 	font-size: .6em;
 	margin-top: 10px;
 }
@@ -78,7 +78,7 @@ hr{
 }
 
 #nav-list a {
-	color: #008040;
+	color: #006633;
 	text-align: center;
 }
 #nav-list a:hover{
@@ -150,10 +150,10 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	overflow: hidden;
 }
 #map-tile:hover{
-	box-shadow: 0 0 5px #008040;
+	box-shadow: 0 0 5px #006633;
 }
 #about-tile:hover, #services-tile:hover{
-	box-shadow: 0 0 5px #008040;
+	box-shadow: 0 0 5px #006633;
 }
 #about-tile{
 	background: url('../images/about.jpg') no-repeat;
@@ -255,7 +255,7 @@ h3.menu-item-title{
 #main-content{
 	background:linear-gradient(to bottom, #e6ac00, #fff);
 	padding-top: 10px;
-	box-shadow: 0 0 10px #008040;
+	box-shadow: 0 0 10px #006633;
 }
 #menu-categories-description{
 		color: #000;
@@ -313,7 +313,7 @@ h3.menu-item-title{
 	    border: 5px solid #000;
 	    color: #fff;
 	    box-shadow: 0 0 5px #000;
-	    background:linear-gradient(to bottom, #008040 , #000);
+	    background:linear-gradient(to bottom, #006633 , #000);
 	}
 
 	.navbar-brand{
