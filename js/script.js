@@ -25,11 +25,13 @@ var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 
 
-	window.addEventListener("scroll", parallax, false);
 	function parallax(){
 		var prlx_layer_1 = document.getElementById('background_image');
 		prlx_layer_1.style.top = -(window.pageYOffset / 4) + 'px';
 	}
+
+	window.addEventListener("scroll", parallax, false);
+	
 	var insertHtml = function(selector, html){
 		var targetElem = document.querySelector(selector);
 		targetElem.innerHTML = html;
