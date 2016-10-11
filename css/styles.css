@@ -281,8 +281,8 @@ h3.menu-item-title{
 
 @media (min-width: 1200px){
 .container .background_image{
-		/*background: url('../images/background_image_1200.jpg') no-repeat;
-		height: 675px;*/
+		background: url('../images/background_image_1200.jpg') no-repeat;
+		height: 675px;
 	}
 .container .background_image_office{
 		background: url('../images/office_1200.jpg') no-repeat;
