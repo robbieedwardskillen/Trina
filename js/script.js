@@ -27,7 +27,7 @@ var menuItemHtml = "snippets/menu-item.html";
 
 	function parallax(){
 		var prlx_layer_1 = document.getElementsByClassName('background_image');
-		prlx_layer_1.style.top = -(window.pageYOffset / 4) + 'px';
+		prlx_layer_1.style.top = -(window.pageYOffset / 4)+'px';
 	}
 
 	window.addEventListener("scroll", parallax, false);
