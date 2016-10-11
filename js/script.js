@@ -10,7 +10,10 @@ $(function(){
   	});
   	
 });
-
+$("#services-tile").mousemove(function(e){
+	var amountMovedY = (e.pageY * -1 / 6);
+	$(this).css('background-position', amountMovedY + 'px ');
+});
 (function(global){
 var dc = {};
 var homeHtml = "snippets/home-snippet.html";

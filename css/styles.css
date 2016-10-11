@@ -351,6 +351,7 @@ h3.menu-item-title{
     width: 360px;
     margin: 0 auto 15px;
   }
+
 }
 @media(max-width: 479px){
 	.navbar-brand h1{
