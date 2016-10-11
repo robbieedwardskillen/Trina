@@ -14,7 +14,7 @@ body {
 	background-image: url(images/Logo.jpg);
 	background-position: -120% 70px;
 	background-repeat: no-repeat;
-	animation: animate-background linear 50s infinite;
+	animation: animate-background linear 5s infinite;
 }
 @keyframes animate-background{
 	from{ background-position: 120% 70px; }
