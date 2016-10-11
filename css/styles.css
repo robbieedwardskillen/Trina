@@ -191,13 +191,13 @@ button.navbar-toggle, .navbar-header .icon-bar{
 #services-categories-title{
 	color: #000;
 	font-size: 2.5em;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px 2px 2px #000;
 }
 #services-categories-title + div{
 	margin-bottom: 50px;
 }
 #menu-categories-title{
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px 2px 2px #000;
 	color:#000;
 	font-weight: bold;
 	font-size: 4em;
