@@ -25,6 +25,7 @@ var menuItemsTitleHtml = "snippets/menu-items-title.html";
 var menuItemHtml = "snippets/menu-item.html";
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
+	
 	var insertHtml = function(selector, html){
 		var targetElem = document.querySelector(selector);
 		targetElem.innerHTML = html;
