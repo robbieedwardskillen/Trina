@@ -5,7 +5,9 @@ body {
   background:linear-gradient(to bottom, #29683b , #fff);
 }
 
-
+#scrolling-image-1{
+	background: url("../images/Logo");
+}
 .navbar{
 	min-height: 140px;
 }
