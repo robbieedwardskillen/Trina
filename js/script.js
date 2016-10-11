@@ -26,7 +26,7 @@ var menuItemHtml = "snippets/menu-item.html";
 
 
 	function parallax(){
-		var prlx_layer_1 = document.getElementsByClassName('background_image');
+		var prlx_layer_1 = document.getElementById('services-tile');
 		prlx_layer_1.style.top = -(window.pageYOffset / 4)+'px';
 	}
 
