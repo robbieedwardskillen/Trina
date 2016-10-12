@@ -26,8 +26,8 @@ var menuItemHtml = "snippets/menu-item.html";
 
 
 	function parallax(){
-		var prlx_layer_1 = document.getElementById('scrolling-image-1');
-		prlx_layer_1.style.top = -(window.pageYOffset / 4)+'px';
+		var prlx_layer_1 = document.getElementById('main-content');
+		prlx_layer_1.style.top = (window.pageYOffset / 4)+'px';
 	}
 
 	window.addEventListener("scroll", parallax, false);

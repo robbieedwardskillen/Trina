@@ -4,23 +4,19 @@ body {
   font-family: 'Oxygen', sans-serif;
   background:linear-gradient(to bottom, #29683b , #fff);
 }
-
-#scrolling-image-1{
+#main-content{
 	position: relative;
-	background: url('../images/Logo.jpg') no-repeat;
+	margin-bottom: 300px;
+}
+#main-background-image{
+	background: url(../images/caesar.jpg) no-repeat;
+	background-size: 130%;
 
 }
 .navbar{
 	min-height: 140px;
 }
-.dropdown-backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 990;
-}
+
 .navbar ul.nav li a {
     z-index: 1000;
 }
@@ -106,7 +102,6 @@ button.navbar-toggle, .navbar-header .icon-bar{
 }
 
 .panel-footer{
-	margin-top: 30px;
 	padding-top: 35px;
 	padding-bottom: 30px;
 	background-color: #000;
@@ -172,6 +167,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	margin-bottom: 15px;
 	box-shadow: 0 0 5px #000;
 	border: 2px solid #000;
+	z-index:1;
 }
 .quote{
 	font-size: 0.8em;
@@ -268,9 +264,11 @@ h3.menu-item-title{
 		margin-bottom: 10px;
 		font-style: italic;
 	}
-
+.container #scrolling-image-1{
+		z-index:0;
+	}
 @media (min-width: 1200px){
-.container .background_image{
+.container #scrolling-image-1{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
 	}
@@ -282,7 +280,7 @@ h3.menu-item-title{
 
 @media(min-width: 992px) and (max-width: 1199px){
 
-	.container .background_image{
+	.container #scrolling-image-1{
 		background: url('../images/background_image_992.jpg') no-repeat;
 		height: 558px;
 	}
@@ -293,7 +291,7 @@ h3.menu-item-title{
 }
 @media(min-width: 768px) and (max-width: 991px){
 
-	.container .background_image{
+	.container #scrolling-image-1{
 		background: url('../images/background_image_768.jpg') no-repeat;
 		height: 432px;
 	}
@@ -303,7 +301,7 @@ h3.menu-item-title{
 	}
 }
 @media(max-width: 767px){
-	.container .background_image {
+	.container #scrolling-image-1 {
 	  	margin-top: 20px;
 	  	padding: 0;
 	}
