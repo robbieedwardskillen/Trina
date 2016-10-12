@@ -48,13 +48,43 @@ var menuItemHtml = "snippets/menu-item.html";
 		return string;
 	}
 	var switchMenuToActive = function(){
-	var classes = document.querySelector("#navHomeButton").className;
-	classes = classes.replace(new RegExp("active","g"), "");
-	document.querySelector("#navHomeButton").className = classes;
-	classes = document.querySelector("#navMenuButton").className;
-		if(classes.indexOf("active") == -1){
-			classes += " active";
-			document.querySelector("#navMenuButton").className = classes;
+		var class1 = document.querySelector("#navHomeButton").className;
+		class1 = class1.replace(new RegExp("active","g"), "");
+		document.querySelector("#navHomeButton").className = class1;
+		class1 = document.querySelector("#navMenuButton").className;
+		if(class1.indexOf("active") == -1){
+			class1 += " active";
+			document.querySelector("#navMenuButton").className = class1;
+		}
+
+		var class2 = document.querySelector("#navServicesButton").className;
+		class2 = class2.replace(new RegExp("active","g"), "");
+		document.querySelector("#navServicesButton").className = class2;
+		class2 = document.querySelector("#navMenuButton").className;
+		if(class2.indexOf("active") == -1){
+			class2 += " active";
+			document.querySelector("#navMenuButton").className = class2;
+		}
+	};
+	var switchServicesToActive = function(){
+		var class1 = document.querySelector("#navHomeButton").className;
+		class1 = class1.replace(new RegExp("active","g"), "");
+		document.querySelector("#navHomeButton").className = class1;
+
+		class1 = document.querySelector("#navServicesButton").className;
+		if(class1.indexOf("active") == -1){
+			class1 += " active";
+			document.querySelector("#navServicesButton").className = class1;
+		}
+
+		var class2 = document.querySelector("#navMenuButton").className;
+		class2 = class2.replace(new RegExp("active","g"), "");
+		document.querySelector("#navMenuButton").className = class2;
+
+		class2 = document.querySelector("#navServicesButton").className;
+		if(class2.indexOf("active") == -1){
+			class2 += " active";
+			document.querySelector("#navServicesButton").className = class2;
 		}
 	};
 	dc.loadAboutPage = function(){
@@ -66,6 +96,7 @@ var menuItemHtml = "snippets/menu-item.html";
 		buildInformationPage();
 	}
 	dc.loadMenuItems = function(categoryShort){
+		switchServicesToActive();
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
 	}
@@ -83,8 +114,6 @@ var menuItemHtml = "snippets/menu-item.html";
 	
 	function buildAboutPage(){
 		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
-
-				switchMenuToActive();
 				var categoriesViewHtml = buildAboutViewHtml(aboutTitleHtml);
 				insertHtml("#main-content", categoriesViewHtml);
 		}, false)
@@ -98,9 +127,9 @@ var menuItemHtml = "snippets/menu-item.html";
 		}, false)
 	}
 	function buildInformationViewHtml(informationTitleHtml){
-		var finalHtml = informationTitleHtml;
+				var finalHtml = informationTitleHtml;
 
-		return finalHtml;
+				return finalHtml;
 	}
 	
 
@@ -117,6 +146,7 @@ var menuItemHtml = "snippets/menu-item.html";
 				insertHtml("#main-content", menuItemsViewHtml);
 			}, false);
 		}, false);
+
 	}
 	function buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml, menuItemHtml){
 		menuItemsTitleHtml = insertProperty(menuItemsTitleHtml, "name", categoryMenuItems.category.name);

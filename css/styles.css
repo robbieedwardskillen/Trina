@@ -168,7 +168,9 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	z-index:1;
 }
 .quote{
-	font-size: 0.8em;
+	font-size: 0.5em;
+	font-weight: bold;
+	color: #29683b;
 }
 
 #about-tile span, #services-tile span, #map-tile span{
