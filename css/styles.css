@@ -81,7 +81,14 @@ hr{
 	color: #29683b;
 	text-align: center;
 }
-#nav-list a:hover{
+
+#navMenuButton a:hover{
+	color: #fff;
+	background-color: #eeb34f;
+	box-shadow: 0 0 2px #000;
+
+}
+#navServicesButton a:hover{
 	color: #fff;
 	background-color: #eeb34f;
 	box-shadow: 0 0 2px #000;
