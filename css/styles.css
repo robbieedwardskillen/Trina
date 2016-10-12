@@ -4,10 +4,8 @@ body {
   font-family: 'Oxygen', sans-serif;
   background:linear-gradient(to bottom, #29683b , #fff);
 }
-#main-content{
-	margin-top: 100px;
-	position: relative;
-	margin-bottom: 300px;
+.navbar-default{
+	background:linear-gradient(to bottom, rgba(245,245,245,1) , rgba(236,220,116,0.9));
 }
 #main-background-image{
 	background: url(../images/caesar.jpg) no-repeat scroll center top transparent;
@@ -265,6 +263,11 @@ h3.menu-item-title{
 		font-style: italic;
 	}
 @media (min-width: 1200px){
+	#main-content{
+	margin-top: 100px;
+	position: relative;
+	margin-bottom: 300px;
+	}
 .container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
@@ -276,7 +279,11 @@ h3.menu-item-title{
 }
 
 @media(min-width: 992px) and (max-width: 1199px){
-
+	#main-content{
+	margin-top: 100px;
+	position: relative;
+	margin-bottom: 300px;
+	}
 	.container .background_image{
 		background: url('../images/background_image_992.jpg') no-repeat;
 		height: 558px;
@@ -287,7 +294,11 @@ h3.menu-item-title{
 	}
 }
 @media(min-width: 768px) and (max-width: 991px){
-
+	#main-content{
+		margin-top: 100px;
+		position: relative;
+		margin-bottom: 300px;
+	}
 	.container .background_image{
 		background: url('../images/background_image_768.jpg') no-repeat;
 		height: 432px;
@@ -298,6 +309,9 @@ h3.menu-item-title{
 	}
 }
 @media(max-width: 767px){
+	#main-background-image{
+	background-size: 150%;
+	}
 	.container .background_image {
 	  	margin-top: 20px;
 	  	padding: 0;
@@ -306,15 +320,17 @@ h3.menu-item-title{
 		margin-top: 20px;
 	  	padding: 0;
 	}
+
 	#call-btn > a{
+
 	   font-size: 1.5em;
 	    display: block;
-	    margin: 20px;
+	    margin: 40px;
 	    padding: 8px;
-	    border: 5px solid #000;
+	    border: 2px solid #000;
 	    color: #fff;
 	    box-shadow: 0 0 5px #000;
-	    background:linear-gradient(to bottom, #29683b , #000);
+	    background:linear-gradient(to top, rgba(63,111,77,0.8) , rgba(220,179,78,0.5));
 	}
 
 	.navbar-brand{
