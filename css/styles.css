@@ -10,9 +10,9 @@ body {
 }
 #main-background-image{
 	background: url(../images/caesar.jpg) no-repeat scroll center top transparent;
-	background-size: 130%;
 
 }
+
 .navbar{
 	min-height: 140px;
 }
@@ -264,11 +264,8 @@ h3.menu-item-title{
 		margin-bottom: 10px;
 		font-style: italic;
 	}
-.container #scrolling-image-1{
-		z-index:0;
-	}
 @media (min-width: 1200px){
-.container #scrolling-image-1{
+.container .background_image{
 		background: url('../images/background_image_1200.jpg') no-repeat;
 		height: 675px;
 	}
@@ -280,7 +277,7 @@ h3.menu-item-title{
 
 @media(min-width: 992px) and (max-width: 1199px){
 
-	.container #scrolling-image-1{
+	.container .background_image{
 		background: url('../images/background_image_992.jpg') no-repeat;
 		height: 558px;
 	}
@@ -291,7 +288,7 @@ h3.menu-item-title{
 }
 @media(min-width: 768px) and (max-width: 991px){
 
-	.container #scrolling-image-1{
+	.container .background_image{
 		background: url('../images/background_image_768.jpg') no-repeat;
 		height: 432px;
 	}
@@ -301,7 +298,7 @@ h3.menu-item-title{
 	}
 }
 @media(max-width: 767px){
-	.container #scrolling-image-1 {
+	.container .background_image {
 	  	margin-top: 20px;
 	  	padding: 0;
 	}
