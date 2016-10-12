@@ -9,7 +9,7 @@ body {
 	margin-bottom: 300px;
 }
 #main-background-image{
-	background: url(../images/caesar.jpg) no-repeat;
+	background: url(../images/caesar.jpg) no-repeat scroll center top transparent;
 	background-size: 130%;
 
 }
