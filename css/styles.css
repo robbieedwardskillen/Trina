@@ -94,7 +94,7 @@ hr{
 	box-shadow: 0 0 2px #000;
 }
 #navPhoneButton{
-	color:#fff;
+
 }
 #nav-list a span{
 	font-size: 1.8em;
@@ -177,7 +177,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	z-index:1;
 }
 .quote{
-	font-size: 0.5em;
+	font-size: 0.4em;
 	font-weight: bold;
 	color: #29683b;
 }
