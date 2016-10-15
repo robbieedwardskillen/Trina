@@ -62,7 +62,9 @@ hr{
 .navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none;
 }
-
+#navToggle{
+	margin: 10px;
+}
 .navbar-brand p{ 
 	color: #29683b;
 	font-size: .6em;
@@ -177,7 +179,7 @@ button.navbar-toggle, .navbar-header .icon-bar{
 	z-index:1;
 }
 .quote{
-	font-size: 0.4em;
+	font-size: 0.5em;
 	font-weight: bold;
 	color: #29683b;
 }
