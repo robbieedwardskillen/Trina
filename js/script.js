@@ -12,7 +12,7 @@ $(function(){
 });
 
 (function(global){
-    var dc = {};
+    var dc = {}; 
     var homeHtml = "partials/home-snippet.html";
     var aboutTitleHtml = "partials/about-snippet.html";
     var informationTitleHtml = "partials/information-snippet.html";
