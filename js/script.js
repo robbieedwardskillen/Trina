@@ -14,13 +14,13 @@ $(function(){
 (function(global){
     var dc = {}; 
     var homeHtml = "../snippets/home-snippet.html";
-    var aboutTitleHtml = "partials/about-snippet.html";
-    var informationTitleHtml = "partials/information-snippet.html";
-    var categoryHtml = "partials/category-snippet.html";
+    var aboutTitleHtml = "../snippets/about-snippet.html";
+    var informationTitleHtml = "../snippets/information-snippet.html";
+    var categoryHtml = "../snippets/category-snippet.html";
     //var menuItemsUrl =
       //"https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
-    var menuItemsTitleHtml = "partials/menu-items-title.html";
-    var menuItemHtml = "partials/menu-item.html";
+    var menuItemsTitleHtml = "../snippets/menu-items-title.html";
+    var menuItemHtml = "../snippets/menu-item.html";
 
 	function parallax(){
 		var prlx_layer_1 = document.getElementById('main-content');
