@@ -12,18 +12,15 @@ $(function(){
 });
 
 (function(global){
-var dc = {};
-var homeHtml = "snippets/home-snippet.html";
-var allCategoriesUrl =
-  "https://trinas-tax-info.herokuapp.com/categories.json";
-var aboutTitleHtml = "snippets/about-snippet.html";
-var informationTitleHtml = "snippets/information-snippet.html";
-var categoryHtml = "snippets/category-snippet.html";
-var menuItemsUrl =
-  "https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
-var menuItemsTitleHtml = "snippets/menu-items-title.html";
-var menuItemHtml = "snippets/menu-item.html";
-
+    var dc = {};
+    var homeHtml = "partials/home-snippet.html";
+    var aboutTitleHtml = "partials/about-snippet.html";
+    var informationTitleHtml = "partials/information-snippet.html";
+    var categoryHtml = "partials/category-snippet.html";
+    //var menuItemsUrl =
+      //"https://trinas-tax-info.herokuapp.com/menu_items.json?category=";
+    var menuItemsTitleHtml = "partials/menu-items-title.html";
+    var menuItemHtml = "partials/menu-item.html";
 
 	function parallax(){
 		var prlx_layer_1 = document.getElementById('main-content');
@@ -98,7 +95,7 @@ var menuItemHtml = "snippets/menu-item.html";
 	dc.loadMenuItems = function(categoryShort){
 		switchServicesToActive();
 		showLoading("#main-content");
-		$ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort, buildAndShowMenuItemsHTML);
+		buildMenuItemsPage();
 	}
 
 	document.addEventListener("DOMContentLoaded", function(event){
@@ -111,7 +108,13 @@ var menuItemHtml = "snippets/menu-item.html";
 	});
 
 
-	
+	function buildMenuItemsPage(){
+		$ajaxUtils.sendGetRequest(menuItemsTitleHtml, function(menuItemsTitleHtml){
+				switchMenuToActive();
+				var categoriesViewHtml = buildMenuItemsViewHtml(menuItemsTitleHtml);
+				insertHtml("#main-content", categoriesViewHtml);
+		}, false)
+	}
 	function buildAboutPage(){
 		$ajaxUtils.sendGetRequest(aboutTitleHtml, function(aboutTitleHtml){
 				var categoriesViewHtml = buildAboutViewHtml(aboutTitleHtml);
@@ -138,7 +141,13 @@ var menuItemHtml = "snippets/menu-item.html";
 
 		return finalHtml;
 	}
-	function buildAndShowMenuItemsHTML(categoryMenuItems){
+
+	function buildMenuItemsViewHtml(menuItemsHtml){
+		var finalHtml = menuItemsHtml;
+
+		return finalHtml;
+	}
+	/*function buildAndShowMenuItemsHTML(categoryMenuItems){
 		$ajaxUtils.sendGetRequest(menuItemsTitleHtml, function(menuItemsTitleHtml){
 			$ajaxUtils.sendGetRequest(menuItemHtml, function(menuItemHtml){
 			
@@ -195,7 +204,7 @@ var menuItemHtml = "snippets/menu-item.html";
 		priceValue = "$" + priceValue.toFixed(2);
 		html = insertProperty(html, pricePropName, priceValue);
 		return html;
-	}
+	}*/
 
 	global.$dc = dc;
 })(window);
