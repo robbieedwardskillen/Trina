@@ -13,7 +13,7 @@ $(function(){
 
 (function(global){
     var dc = {}; 
-    var homeHtml = "partials/home-snippet.html";
+    var homeHtml = "../snippets/home-snippet.html";
     var aboutTitleHtml = "partials/about-snippet.html";
     var informationTitleHtml = "partials/information-snippet.html";
     var categoryHtml = "partials/category-snippet.html";
@@ -102,8 +102,7 @@ $(function(){
 		showLoading("#main-content");
 		$ajaxUtils.sendGetRequest(
 			homeHtml, function(homeHtml){
-				document.querySelector("#main-content")
-				.innerHTML = homeHtml;
+				document.querySelector("#main-content").innerHTML = homeHtml;
 			}, false);
 	});
 
