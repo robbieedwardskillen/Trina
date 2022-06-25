@@ -104,7 +104,7 @@ a {
   .project-tagline {
     font-size: 1rem; } }
 
-.menu-item-description {
+#menu-item-description {
  color: #000;
 }
 .main-content :first-child {
