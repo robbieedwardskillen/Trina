@@ -109,7 +109,7 @@ $(function(){
 
 	function buildMenuItemsPage(){
 		$ajaxUtils.sendGetRequest(menuItemsTitleHtml, function(menuItemsTitleHtml){
-				switchMenuToActive();
+				switchServicesToActive();
 				var categoriesViewHtml = buildMenuItemsViewHtml(menuItemsTitleHtml);
 				insertHtml("#main-content", categoriesViewHtml);
 		}, false)
